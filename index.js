@@ -10,3 +10,8 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
+
+window.addEventListener("load", () => {
+    document.querySelector(".animate-left").classList.add("show");
+    document.querySelector(".animate-bottom").classList.add("show");
+});
