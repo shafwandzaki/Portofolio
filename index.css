@@ -297,3 +297,132 @@ html{
     color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.467);
 }
+
+
+
+
+/* ==========================
+   RESPONSIVE - MOBILE & TABLET
+========================== */
+
+/* TABLET & MOBILE */
+@media (max-width: 1024px) {
+    .konten {
+        flex-direction: column;
+        height: auto;
+        padding-top: 120px;
+    }
+
+    .konten-kiri,
+    .konten-kanan {
+        width: 100%;
+        height: auto;
+        padding: 0 40px;
+    }
+
+    .konten-kanan img {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .judul {
+        width: auto;
+    }
+
+    .judul p {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .link {
+        display: none; /* aman, nanti bisa hamburger */
+    }
+
+    /* KONTEN */
+    .konten {
+        padding-top: 100px;
+    }
+
+    .konten-kiri {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .konten-teks {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    /* TEKS */
+    .t1 {
+        font-size: 16px;
+    }
+
+    .t2,
+    .t21 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .tp {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .t21 {
+        margin-left: 8px;
+    }
+
+    .t3 {
+        font-size: 18px;
+    }
+
+    /* BUTTON */
+    .pt {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .tombol,
+    .tombol2 {
+        width: 180px;
+        margin: 0;
+    }
+
+    /* ICON SOSMED */
+    .iconsosmed {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .iconsosmed img {
+        width: 36px;
+        height: 36px;
+        margin: 0 15px;
+    }
+}
+
+/* HP KECIL (≤ 480px) */
+@media (max-width: 480px) {
+    .t2,
+    .t21 {
+        font-size: 28px;
+    }
+
+    .t3 {
+        font-size: 16px;
+    }
+}
