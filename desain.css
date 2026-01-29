@@ -158,7 +158,7 @@ html{
 .photo-scroll {
     display: flex;
     gap: 50px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     padding-top: 30px;
     padding-bottom: 30px;
     scroll-behavior: smooth;
@@ -197,6 +197,20 @@ html{
     transform: scale(1.05);
     opacity: 0.9;
 }
+
+/* ===== RING SCROLL SYSTEM ===== */
+
+.photo-ring-wrapper {
+  overflow: hidden;     
+  position: relative;
+}
+
+.photo-ring-track {
+  display: flex;
+  gap: 50px;
+  will-change: transform;
+}
+
 
 /* FOOTER */
 .footer{
