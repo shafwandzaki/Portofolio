@@ -34,7 +34,7 @@ html{
     display: flex;
 }
 
-.dropdownmenu {
+.dropdown-menu {
     position: absolute;
     background: transparent;
     border-radius: 12px;
@@ -51,7 +51,7 @@ html{
     z-index: 999;
 }
 
-.dropdownmenu a {
+.dropdown-menu a {
     display: block;
     margin: 0;
     padding: 6px 16px;
@@ -63,29 +63,23 @@ html{
     font-size: 16px;
 }
 
-.dropdownmenu a:hover {
+.dropdown-menu a:hover {
     background: rgba(0,0,0,0.1);
     border-radius: 6px;
 }
 
 /* Hover effect */
-.dropdown:hover .dropdownmenu {
+.dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-    background: rgba(78, 78, 78, 0.15);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
-.dropdownmenu.scrolled {
-  background: rgba(78, 78, 78, 0.15); /* semi transparan */
-  backdrop-filter: blur(10px);          /* blur effect */
-  -webkit-backdrop-filter: blur(10px);
-}
-
 .navbar.scrolled {
-  background: rgba(78, 78, 78, 0.15); /* semi transparan */
+  background: rgba(255, 255, 255, 0.15); /* semi transparan */
   backdrop-filter: blur(10px);          /* blur effect */
   -webkit-backdrop-filter: blur(10px);
 }
@@ -99,7 +93,7 @@ html{
     color: white;
 }
 .judul p{
-    margin-left: 80px;
+    margin-left: 50px;
     font-size: 34px;
     font-weight: 700;
 }
@@ -124,12 +118,11 @@ html{
     border-radius: 6px;
 }
 
+
 .kirian{
     height: 100%;
     width: 30%;
 }
-
-
 
 /* ==========================
    PHOTOGRAPHY PAGE
@@ -165,7 +158,7 @@ html{
 .photo-scroll {
     display: flex;
     gap: 50px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     padding-top: 30px;
     padding-bottom: 30px;
     scroll-behavior: smooth;
@@ -203,6 +196,19 @@ html{
 .photo-scroll img:hover {
     transform: scale(1.05);
     opacity: 0.9;
+}
+
+/* ===== RING SCROLL SYSTEM ===== */
+
+.photo-ring-wrapper {
+  overflow: hidden;     
+  position: relative;
+}
+
+.photo-ring-track {
+  display: flex;
+  gap: 50px;
+  will-change: transform;
 }
 
 
