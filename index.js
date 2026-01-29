@@ -21,7 +21,7 @@ document.querySelectorAll('.photo-ring-wrapper').forEach(wrapper => {
 
   // STATE PER RING
   let position = 0;
-  let autoScrollSpeed = 0.25;
+  let autoScrollSpeed = 1;
   let autoScrollActive = true;
   let isInteracting = false;
 
