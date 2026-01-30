@@ -1,0 +1,312 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: all 1s ease;
+}
+
+/* ===== DROPDOWN PROJECT ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    padding: 6px 16px;
+    display: flex;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: transparent;
+    border-radius: 12px;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.dropdown-menu a {
+    display: block;
+    margin: 0;
+    padding: 6px 16px;
+    line-height: 1.2;
+    color: white;
+    text-decoration: none;
+    font-style: none;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+
+/* Hover effect */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.15); /* semi transparan */
+  backdrop-filter: blur(10px);          /* blur effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.judul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    color: white;
+}
+.judul p{
+    margin-left: 50px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.link{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+}
+.link a{
+    margin: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 6px 16px;
+}
+
+.link a:hover{
+    background: rgba(180, 180, 180, 0.1);
+    border-radius: 6px;
+}
+
+
+.kirian{
+    height: 100%;
+    width: 30%;
+}
+
+/* ==========================
+   PHOTOGRAPHY PAGE
+========================== */
+
+.photo-page {
+    background-color: #1c1c1c;
+    padding: 120px 80px;
+    color: white;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+/* SECTION */
+.section {
+    margin-bottom: 70px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 18px;
+    /* margin-bottom: 25px; */
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* HORIZONTAL SCROLL */
+.photo-scroll {
+    display: flex;
+    gap: 50px;
+    /* overflow-x: auto; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    scroll-behavior: smooth;
+}
+
+/* HIDE SCROLLBAR */
+.photo-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.photo-scroll::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+/* LANDSCAPE IMAGE */
+.photo-scroll.landscape img {
+    height: 400px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* PORTRAIT IMAGE */
+.photo-scroll.portrait img {
+    height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* HOVER EFFECT */
+.photo-scroll img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.photo-scroll img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ===== RING SCROLL SYSTEM ===== */
+
+.photo-ring-wrapper {
+  overflow: hidden;     
+  position: relative;
+}
+
+.photo-ring-track {
+  display: flex;
+  gap: 50px;
+  will-change: transform;
+}
+
+
+
+/* KONTEN 3 */
+.konten-3{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.akunig{
+    margin-bottom: 30px;
+}
+
+.box-konten3{
+    display: flex;
+    justify-content: left;
+}
+
+.fotoig{
+    height: 600px;
+    width: 300px;
+    border-radius: 30px;
+    margin-right: 70px;
+}
+
+.kt{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.ki{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 40px;
+    text-decoration: none;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    width: 180px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.keterangan a{
+    text-decoration: none;
+}
+
+/* KONTEN 4 */
+.konten-4{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(rgb(70, 70, 70), rgb(230, 230, 230));
+}
+
+.projectapk{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.kotakk{
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.jproyek{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+
+.penjelasan{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.imgapk{
+    height: 200px;
+    width: 250px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #1c1c1c;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.467);
+}
