@@ -482,7 +482,7 @@ html{
 /* KONTEN 8 */
 .konten-8{
     background-color: #1c1c1c;
-    color: white;
+    color: black;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 50px;
@@ -531,4 +531,5 @@ html{
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.467);
+
 }
